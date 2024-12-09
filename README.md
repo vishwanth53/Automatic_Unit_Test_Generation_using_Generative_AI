@@ -19,29 +19,29 @@ Framework Integration: Seamlessly integrates with popular testing frameworks lik
 
 ## Installation
 1. Clone the repository.
-2. Install dependencies:
+    ```bash
+    git clone
+    ```
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Add your OpenAI API key to the `.env` file.
+4. Add your OpenAI API key to the `.env` file.
 
 ## Usage
-1. Run tests and generate coverage:
-   ```bash
-   python test_runner.py
-   ```
-2. Parse coverage gaps:
-   ```bash
-   python coverage_parser.py
-   ```
-3. Generate prompts for untested code:
-   ```bash
-   python prompt_builder.py
-   ```
-4. Call AI to generate unit tests:
+1. Prepare Your Code: Ensure your Python functions are defined in a module (e.g., example.py)
+   
+2. Run the AI Test Generator:
    ```bash
    python ai_caller.py
    ```
+   This script will generate unit tests for the functions defined in your module and save them as test_<function_name>.py files.
+   
+3. Execute the Tests:
+   ```bash
+   pytest --cov=example --cov-report=term-missing
+   ```
+
 ## Troubleshooting
 Common Errors: If you encounter syntax errors or issues with test generation, ensure that your code is correctly formatted and that the AI model has access to all necessary context.
 
