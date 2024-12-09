@@ -4,6 +4,11 @@
 ## Overview
 This project automates the generation of unit tests using generative AI models like OpenAI's GPT. It improves code coverage, reduces manual effort, and increases software reliability.
 
+## Features
+Automated Test Generation: Utilizes AI models to generate unit tests for your codebase.
+Code Coverage Analysis: Provides insights into code coverage to ensure comprehensive testing.
+Framework Integration: Seamlessly integrates with popular testing frameworks like pytest.
+
 ## Components
 1. `example.py`: Sample code to be tested.
 2. `test_example.py`: Unit tests for `example.py`.
@@ -37,3 +42,8 @@ This project automates the generation of unit tests using generative AI models l
    ```bash
    python ai_caller.py
    ```
+## Troubleshooting
+Common Errors: If you encounter syntax errors or issues with test generation, ensure that your code is correctly formatted and that the AI model has access to all necessary context.
+
+Improving Coverage: To enhance code coverage, consider refining the prompts provided to the AI model or manually adding tests for complex cases.   
+   
