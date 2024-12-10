@@ -20,7 +20,7 @@ Framework Integration: Seamlessly integrates with popular testing frameworks lik
 ## Installation
 1. Clone the repository.
     ```bash
-    git clone
+    git clone https://github.com/vishwanth53/Automatic_Unit_Test_Generation_using_Generative_AI
     ```
 3. Install dependencies:
    ```bash
