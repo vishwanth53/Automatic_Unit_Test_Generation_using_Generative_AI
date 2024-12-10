@@ -131,6 +131,8 @@ Additionally, provide pytest unit tests covering:
 - Standard cases with integers and floats.
 - Edge cases such as division by zero.
 - Invalid input types to ensure proper exception handling.
+- Invalid input types to ensure proper exception handling.
+- For floating-point comparisons, use pytest.approx to account for precision issues.
 
     Returns:
     int or float: The remainder when a is divided by b.
