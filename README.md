@@ -17,6 +17,12 @@ Framework Integration: Seamlessly integrates with popular testing frameworks lik
 5. `prompt_builder.py`: Builds prompts for AI models.
 6. `ai_caller.py`: Interacts with OpenAI API to generate tests.
 
+## Requirements
+Before beginning we need to have these following:
+1. OPENAI_API_KEY set in your environment variables, which is required for calling the OpenAI API.
+2. Code Coverage tool: A Cobertura XML code coverage report is required for the tool to function correctly.
+For example, in Python one could use pytest-cov. Add the --cov-report=xml option when running Pytest.
+
 ## Installation
 1. Clone the repository.
     ```bash
@@ -42,6 +48,20 @@ Framework Integration: Seamlessly integrates with popular testing frameworks lik
    pytest --cov=example --cov-report=term-missing
    ```
    This command should be called before and after calling the ai_caller function which helps in analysing the code coverage.
+
+## Output
+A few debug files will be outputted locally within the repository.
+Test_Function_name.py: These files contains unit test cases for each function called in example.py file.
+1. Test_add.py
+2. Test_Subtract.py
+3. Test_Multiply.py
+4. Test_Divide.py
+5. Test_Modulus.py
+   
+## Results
+ ![image](https://github.com/user-attachments/assets/9212c14d-0537-4d9d-832d-f3e9989827ab)
+ ![image](https://github.com/user-attachments/assets/42c22cd1-c593-46cd-8ae0-f6f4b81078fe)
+ ![image](https://github.com/user-attachments/assets/3531c36e-c043-4954-908b-388e1757d564)
 
 ## Troubleshooting
 Common Errors: If you encounter syntax errors or issues with test generation, ensure that your code is correctly formatted and that the AI model has access to all necessary context.
