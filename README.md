@@ -49,6 +49,11 @@ For example, in Python one could use pytest-cov. Add the --cov-report=xml option
    ```
    This command should be called before and after calling the ai_caller function which helps in analysing the code coverage.
 
+4. To Generate coverage.xml
+   ```bash
+    pytest --cov=example --cov-report=xml
+   ```   
+
 ## Output
 A few debug files will be outputted locally within the repository.
 Test_Function_name.py: These files contains unit test cases for each function called in example.py file.
