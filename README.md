@@ -26,7 +26,7 @@ Framework Integration: Seamlessly integrates with popular testing frameworks lik
    ```bash
    pip install -r requirements.txt
    ```
-4. Add your OpenAI API key to the `.env` file.
+3. Add your OpenAI API key to the `.env` file.
 
 ## Usage
 1. Prepare Your Code: Ensure your Python functions are defined in a module (e.g., example.py)
@@ -41,6 +41,7 @@ Framework Integration: Seamlessly integrates with popular testing frameworks lik
    ```bash
    pytest --cov=example --cov-report=term-missing
    ```
+   This command should be called before and after calling the ai_caller function which helps in analysing the code coverage.
 
 ## Troubleshooting
 Common Errors: If you encounter syntax errors or issues with test generation, ensure that your code is correctly formatted and that the AI model has access to all necessary context.
