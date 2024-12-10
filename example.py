@@ -1,5 +1,11 @@
 # example.py
+import math
 def add(a, b):
+    """
+    Adds two numbers. Raises TypeError if inputs are not int or float.
+    """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Inputs must be int or float.")
     return a + b
 
 def subtract(a, b):
@@ -31,5 +37,5 @@ def modulus(a, b):
         raise TypeError("Inputs must be int or float.")
     if b == 0:
         raise ValueError("Cannot divide by zero.")
-    return a % b
+    return math.fmod(a,b)
 
