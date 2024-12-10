@@ -76,6 +76,9 @@ if _name_ == "_main_":
 def add(a, b):
     \"\"\"
     Add two numbers.
+    - Test normal cases with integers and floats.
+- Test edge cases with invalid input types, such as strings, lists, or None.
+- Ensure invalid input cases raise a TypeError.
     \"\"\"
     return a + b
 """
